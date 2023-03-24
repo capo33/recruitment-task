@@ -1,5 +1,7 @@
 # recruitment-task
 
+![alt text](./assets/image/%E2%8C%A8_recruitment-task.png)
+
 ## Installation
 
 * Clone this repository 

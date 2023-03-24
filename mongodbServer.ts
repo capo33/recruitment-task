@@ -2,8 +2,8 @@ import "dotenv/config";
 import express from "express";
 
 import { connectToMongoDB } from "./config/mongoDB";
-import env from "./utils/validateEnv";
 import companyRoutes from "./routes/company.routes";
+import env from "./utils/validateEnv";
 
 // Create instance of express app
 const app = express();
@@ -17,7 +17,7 @@ connectToMongoDB();
 // Welcome route
 app.get("/", (req, res) => {
   res.json({
-    message: "Welcome to the API",
+    message: "Welcome to the MongoDB API",
     author: "Mohamed Capo",
     version: "1.0.0",
   });
@@ -28,5 +28,5 @@ app.use("/", companyRoutes);
 
 // Listen to port
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+  console.log(`listening on http://localhost:${port}`);
 });

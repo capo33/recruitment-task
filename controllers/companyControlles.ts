@@ -1,12 +1,13 @@
 import axios from "axios";
 import { RequestHandler } from "express";
+
 import { urls } from "../api/urls";
 import Company from "../models/Company";
 
 // @desc    Get all companies from the 3rd party API and save them to the DB
 // @route   GET /api
 // @access  Public
-const getAllCompanies: RequestHandler = async (req, res) => {
+const getAllCompanies: RequestHandler = (req, res) => {
   urls.map((url) => {
     axios
       .get(url)
@@ -25,7 +26,8 @@ const getAllCompanies: RequestHandler = async (req, res) => {
   });
 
   res.status(200).json({
-    message: "Data fetched from api and saved to database please check the next routes",
+    message:
+      "Data fetched from api and saved to database please check the next routes",
   });
 };
 

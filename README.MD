@@ -42,7 +42,7 @@ PGPORT = your PGPORT
 ```
 yarn start
 ```
-2- I the browser go to
+2- In the browser go to
 ```
 http://localhost:8080 --> for welcome route
 http://localhost:8080/api --> for getting all data from API and save them to the DB
@@ -57,7 +57,7 @@ http://localhost:8080/postal_codes/01730/companies --> Get all companies based o
 ```
 yarn start
 ```
-2- I the browser go to
+2- In the browser go to
 ```
 http://localhost:8080 --> for welcome route
 http://localhost:8080/api --> for getting all data from API and save them to the DB

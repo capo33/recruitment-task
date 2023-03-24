@@ -55,7 +55,7 @@ http://localhost:8080/postal_codes/01730/companies --> Get all companies based o
 
 1- run command
 ```
-yarn start
+yarn run dev
 ```
 2- In the browser go to
 ```

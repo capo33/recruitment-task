@@ -4,22 +4,28 @@
 
 ## Installation
 
-* Clone this repository 
+- Clone this repository
+
 ```bash
 $ git clone https://github.com/ShaanCoding/ReadME-Generator.git
 ```
-* Go into the repository 
+
+- Go into the repository
+
 ```bash
-$ cd recruitment-task 
+$ cd recruitment-task
 ```
 
-* Install dependencies 
-```bash
-yarn 
-```
-* Create .env file
+- Install dependencies
 
-* add your own database in the .env file
+```bash
+yarn
+```
+
+- Create .env file
+
+- Add your own database in the .env file
+
 ```bash
 ## Port to listen on
 PORT=8080
@@ -35,33 +41,54 @@ PGDATABASE = your PGDATABASE
 PGPORT = your PGPORT
 ```
 
+- Make sure that you have mongodb and postgreSQL installed in your machin
+
 ## Usage
-* Run the app for mongoDB
+
+- Run the app for mongoDB
 
 1- run command
+
 ```
 yarn start
 ```
+
 2- In the browser go to
+
 ```
 http://localhost:8080 --> for welcome route
 http://localhost:8080/api --> for getting all data from API and save them to the DB
-http://localhost:8080/postal_codes/00930/companies --> Get all companies based on postal code 00930 
-http://localhost:8080/postal_codes/02100/companies --> Get all companies based on postal code 02100 
+http://localhost:8080/postal_codes/00930/companies --> Get all companies based on postal code 00930
+http://localhost:8080/postal_codes/02100/companies --> Get all companies based on postal code 02100
 http://localhost:8080/postal_codes/01730/companies --> Get all companies based on postal code 01730
 ```
 
-* Run the app for postgreSQL
+- Run the app for postgreSQL
 
-1- run command
+1- create database
+
+```
+CREATE DATABASE tasks
+```
+
+2- create table
+
+```
+cd sql/db.sql  and copy the table
+```
+
+3- run command
+
 ```
 yarn run dev
 ```
-2- In the browser go to
+
+4- In the browser go to
+
 ```
 http://localhost:8080 --> for welcome route
 http://localhost:8080/api --> for getting all data from API and save them to the DB
-http://localhost:8080/postal_codes/00930/companies --> Get all companies based on postal code 00930 
-http://localhost:8080/postal_codes/02100/companies --> Get all companies based on postal code 02100 
+http://localhost:8080/postal_codes/00930/companies --> Get all companies based on postal code 00930
+http://localhost:8080/postal_codes/02100/companies --> Get all companies based on postal code 02100
 http://localhost:8080/postal_codes/01730/companies --> Get all companies based on postal code 01730
 ```
